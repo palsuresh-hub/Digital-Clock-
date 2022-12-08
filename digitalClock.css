@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2eee3;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+p {
+    /* position: relative;
+    top: 25%;
+    left: 15%; */
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 5rem;
+    color: red;
+}
+
+.clock {
+    font-size: 8rem;
+    width: 48rem;
+    margin: 4rem auto;
+    color: rgb(0, 185, 242);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+@media (min-width: 500px) and (max-width:750px) {
+    p {
+        margin-top: 3rem;
+        font-size: 4rem;
+    }
+
+    div .colck {
+        font-size: 6rem;
+        width: 36rem;
+    }
+}
+
+@media (max-width: 500px) {
+    p {
+        margin-top: 2.5rem;
+        font-size: 3rem;
+    }
+
+    .colck {
+        font-size: 4.5rem;
+        width: 26rem;
+        margin: 3rem auto;
+        color: rgb(0, 185, 242);
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 1rem;
+    }
+}
