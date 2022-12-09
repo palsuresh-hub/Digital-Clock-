@@ -5,6 +5,7 @@
 }
 
 body {
+    /* background: #fff; */
     background: #f2eee3;
 }
 
@@ -13,51 +14,85 @@ html {
     /* 1rem = 10px */
 }
 
+
 p {
-    /* position: relative;
-    top: 25%;
-    left: 15%; */
-    margin-top: 5rem;
     text-align: center;
     font-size: 5rem;
     color: red;
 }
 
+.container {
+    width: 80vw;
+    /* background-color: yellow; */
+    margin: 10rem auto;
+    /* height: 50vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .clock {
-    font-size: 8rem;
-    width: 48rem;
-    margin: 4rem auto;
-    color: rgb(0, 185, 242);
+    font-size: 6rem;
+    width: 38rem;
+    margin: 3rem auto;
+    color: #0d50a9;
     text-align: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    /* box-shadow: 0px 0px 12px 7px rgb(184 184 184 / 50%); */
+    box-shadow:0px 0px 12px 8px rgb(97 95 95 / 45%);
     border-radius: 1rem;
 }
 
-@media (min-width: 500px) and (max-width:750px) {
+@media(max-width:1000px) {
     p {
-        margin-top: 3rem;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
-    div .colck {
-        font-size: 6rem;
-        width: 36rem;
+    .clock {
+        font-size: 5rem;
+        width: 31rem;
+    }
+}
+
+@media (max-width: 700px) {
+    p {
+        font-size: 2.5rem;
+    }
+
+    .clock {
+        font-size: 4rem;
+        width: 24rem;
     }
 }
 
 @media (max-width: 500px) {
     p {
-        margin-top: 2.5rem;
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
 
-    .colck {
-        font-size: 4.5rem;
-        width: 26rem;
-        margin: 3rem auto;
-        color: rgb(0, 185, 242);
-        text-align: center;
-        border: 2px solid black;
-        border-radius: 1rem;
+    .clock {
+        margin-top: 2.5rem;
+        font-size: 3rem;
+        width: 19rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
+
+/* @media (max-width: 300px) {
+    p {
+        font-size: 1rem;
+    }
+
+    .clock {
+        font-size: 2rem;
+        width: 15rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} */
